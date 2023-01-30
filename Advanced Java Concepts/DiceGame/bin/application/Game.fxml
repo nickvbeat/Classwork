@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <children>
+      <Button fx:id="rollBtn" layoutX="126.0" layoutY="306.0" mnemonicParsing="false" onAction="#roll" prefHeight="68.0" prefWidth="103.0" text="Roll" />
+      <Button fx:id="holdBtn" layoutX="375.0" layoutY="306.0" mnemonicParsing="false" onAction="#hold" prefHeight="68.0" prefWidth="103.0" text="Hold" />
+      <Label fx:id="plyrScore" layoutX="30.0" layoutY="48.0" text="Player Score:0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cpuScore" layoutX="359.0" layoutY="48.0" text="CPU Score: 0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="whosTurn" layoutX="224.0" layoutY="83.0" text="Your Turn">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentRoll" layoutX="131.0" layoutY="161.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="163.0" layoutY="225.0" />
+      <TextField fx:id="nameText" layoutX="263.0" layoutY="221.0" visible="false" />
+      <Button fx:id="contBtn" layoutX="268.0" layoutY="280.0" mnemonicParsing="false" onAction="#contButton" text="Continue" visible="false" />
+      <Button fx:id="exitBtn" layoutX="260.0" layoutY="326.0" mnemonicParsing="false" onAction="#endGame" prefHeight="47.0" prefWidth="79.0" text="End Game" visible="false" />
+   </children>
+</AnchorPane>

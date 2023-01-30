@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="@color/black"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/nameBox"
+            android:layout_width="315dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="@string/enter_name1"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/phoneBox"
+            android:layout_width="318dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/enter_phone1"
+            android:importantForAutofill="no"
+            android:inputType="text|phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameBox"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/add"
+            app:layout_constraintEnd_toStartOf="@+id/findButton"
+            app:layout_constraintTop_toBottomOf="@+id/phoneBox" />
+
+        <Button
+            android:id="@+id/findButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/find"
+            app:layout_constraintEnd_toStartOf="@+id/ascButton"
+            app:layout_constraintTop_toBottomOf="@+id/phoneBox" />
+
+        <Button
+            android:id="@+id/ascButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="68dp"
+            android:text="@string/asc"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+            app:layout_constraintEnd_toEndOf="@+id/phoneBox"
+            app:layout_constraintTop_toBottomOf="@+id/phoneBox"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/descButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/desc"
+            app:layout_constraintStart_toEndOf="@+id/ascButton"
+            app:layout_constraintTop_toBottomOf="@+id/phoneBox" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="409dp"
+            android:layout_height="533dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/findButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

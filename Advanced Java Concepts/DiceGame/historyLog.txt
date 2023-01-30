@@ -1,0 +1,4 @@
+Name:Nick Mon Jul 25 12:31:18 EDT 2022 WIN Score:104
+Name:Nick Mon Jul 25 12:37:14 EDT 2022 WIN Score:100
+Name:Nick Mon Jul 25 12:40:00 EDT 2022 LOSS Score:69
+Name:Nick Mon Jul 25 12:45:40 EDT 2022 WIN Score:105/nName:Nick Mon Jul 25 13:27:04 EDT 2022 WIN Score:100/n Name:Nick Mon Jul 25 13:30:39 EDT 2022 WIN Score:102
