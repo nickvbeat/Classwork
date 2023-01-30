@@ -1,0 +1,42 @@
+#!/bin/bash
+
+myString=$(cat sampletext.txt | tr '[:upper:]' '[:lower:]')
+counta=0
+counte=0
+counti=0
+counto=0
+countu=0
+totalChars=0
+totalVowels=0
+while [ $totalChars -le ${#myString} ]
+    do
+        char=${myString:totalChars:1}
+        totalChars=$(($totalChars+1))
+        if [ "$char" == "a" ]
+            then
+                counta=$(($counta+1))
+                totalVowels=$(($totalVowels+1))
+
+        elif [ "$char" == "e" ]
+            then 
+                counte=$(($counte+1))
+                totalVowels=$(($totalVowels+1))
+        
+        elif [ "$char" == "i" ]
+            then
+                counti=$(($counti+1))
+                totalVowels=$(($totalVowels+1))
+        
+        elif [ "$char" == "o" ]
+            then 
+                counto=$(($counto+1))
+                totalVowels=$(($totalVowels+1))
+
+        elif [ "$char" == "u" ]
+            then
+                countu=$(($countu+1))
+                totalVowels=$(($totalVowels+1))
+        fi
+        done
+        echo "Total number of characters is ${totalChars} with ${totalVowels} vowels"
+        echo "The breakdown of vowels (a,e,i,o,u) is ${counta} a's, ${counte} e's, ${counti} i's, ${counto} o's, and ${countu} u's."
