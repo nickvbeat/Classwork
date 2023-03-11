@@ -1,1 +1,1 @@
-These two projects are ones that I made with the guidance of a Udemy course designed by Brad Traversy.
+These projects are ones that I made with the guidance of a Udemy course designed by Brad Traversy.
